@@ -13,30 +13,47 @@
     
     <title>Ethan Hamilton | Portfolio</title>
   </head>
+  <body>
 
   <nav class="navbar navbar-expand-lg navbar-light fixed-top">
     <div class="container">
-      <<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon">
-          <div></div> <!-- Middle line -->
-        </span>
-      </button>
+      <label class="burger" for="burger">
+        <input type="checkbox" id="burger" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="#home">HOME</a>
+            <a class="nav-link" href="#home">
+              <i class="fas fa-home"></i>
+              <span>HOME</span>
+            </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#about">ABOUT</a>
+            <a class="nav-link" href="#about">
+              <i class="fas fa-user"></i>
+              <span>ABOUT</span>
+            </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#skills">SKILLS</a>
+            <a class="nav-link" href="#skills">
+              <i class="fas fa-code"></i>
+              <span>SKILLS</span>
+            </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#projects">PROJECTS</a>
+            <a class="nav-link" href="#projects">
+              <i class="fas fa-folder-open"></i>
+              <span>PROJECTS</span>
+            </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#contact">CONTACT</a>
+            <a class="nav-link" href="#contact">
+              <i class="fas fa-envelope"></i>
+              <span>CONTACT</span>
+            </a>
           </li>
         </ul>
       </div>
@@ -53,24 +70,37 @@
     <section id="home" class="section__container header__container">
       <div class="header__text">
         <p>Welcome, I'm</p>
-        <h1>Ethan Hamilton</h1>
+        <h1>Ethan<br>Hamilton</h1>
         <a class="section__title">Software Developer</a>
         <div class="action__btns">
           <!-- Link to view or download the PDF -->
-          <a href="EthanHamilton-CV.pdf" class="btn" target="_blank">View Resume</a>
+          <a href="assets/documents/EthanHamilton-CV.pdf" class="btn" target="_blank">View Resume</a>
+        </div>
+        
+        <!-- Social Media Links -->
+        <div class="header__social">
+          <a href="mailto:ethanh902@gmail.com" class="social__icon" title="Email">
+            <i class="ri-mail-line"></i>
+          </a>
+          <a href="https://github.com/Ethan-Hamilton" class="social__icon" target="_blank" rel="noopener noreferrer" title="GitHub">
+            <i class="ri-github-fill"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/ethan-hamilton-4724a52b4" class="social__icon" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+            <i class="ri-linkedin-fill"></i>
+          </a>
+          <a href="assets/documents/Ethan Hamilton-AcademicTranscript.pdf" class="social__icon" target="_blank" rel="noopener noreferrer" title="Academic Transcript">
+            <i class="fas fa-graduation-cap"></i>
+          </a>
         </div>
       </div>
     </section>
   </header>
   
-  
-  
-  
 
     <section id="about" class="about">
       <div class="section__container about__container">
         <div class="header__image">
-          <img src="EthanCVPhoto.jpg" alt="Ethan Hamilton">
+          <img src="assets/images/EthanCVPhoto.jpg" alt="Ethan Hamilton">
           <div class="social__icons">
             <a href="mailto:ethanh902@gmail.com" class="icon" title="Email">
               <i class="ri-mail-line"></i>
@@ -81,21 +111,21 @@
             <a href="https://www.linkedin.com/in/ethan-hamilton-4724a52b4" class="icon" target="_blank" rel="noopener noreferrer" title="LinkedIn">
               <i class="ri-linkedin-fill"></i>
             </a>
-            <a href="https://www.instagram.com/_ethan_hamilton" class="icon" target="_blank" rel="noopener noreferrer" title="Instagram">
-              <i class="ri-instagram-fill"></i>
+            <a href="assets/documents/Ethan Hamilton-AcademicTranscript.pdf" class="icon" target="_blank" rel="noopener noreferrer" title="Academic Transcript">
+              <i class="fas fa-graduation-cap"></i>
             </a>
           </div>
         </div>
         <div class="about__content">
           <h2 class="section__title">ABOUT ME</h2>
           <p class="about__details">
-            I am a recent BSc in IT graduate with a strong foundation in software development, backend and frontend programming, 
-            and database management. Through university projects, I gained practical experience in full-stack web development, 
-            database design, and programming languages. Passionate about leveraging technology for innovative solutions, I thrive 
-            in collaborative environments, excel at problem-solving, and am dedicated to continuous learning in areas like databases, 
-            AI, and computer networks. While my primary focus is software development, I am also exploring opportunities in 
-            cybersecurity. With strengths in teamwork, adaptability, time management, and persistence, I am eager to contribute 
-            effectively and build a successful career in IT.
+            Passionate software developer leveraging C# (.NET MVC), modern JavaScript frameworks, and full-stack expertise to build impactful solutions.
+          </p>
+          <p class="about__details">
+            I've implemented xUnit and AAA testing across large-scale .NET projects, designed automation workflows with n8n, and architected the MERN-stack Swingshack site using React (TypeScript) and Tailwind CSS. I'm also experienced in Power BI—creating dashboards, writing DAX, and configuring scheduled refreshes via gateway connections to ensure data integrity. Recently, I've migrated a Flutter project to React and React Native, updating both web and mobile platforms.
+          </p>
+          <p class="about__details">
+            I'm now expanding my skills in Angular and React Native, and I thrive in dynamic, fast-paced environments where continuous learning drives innovation. Let's connect—I'm always open to collaborating on impactful software projects or exploring new opportunities.
           </p>
         </div>
       </div>
@@ -103,6 +133,11 @@
     
 
     <section id="skills" class="skills">
+      <section class="wrapper">
+        <div class="stars"></div>
+        <div class="stars2"></div>
+        <div class="stars3"></div>
+      </section>
       <div class="section__container">
         <h2 class="section__title">MY SKILLS</h2>
         
@@ -159,8 +194,6 @@
       </div>
     </section>
     
-    
-    
     <section id="projects" class="project">
       <div class="section__container project__container">
         <h2 class="section__title">LATEST PROJECTS</h2>
@@ -168,35 +201,169 @@
 
           <div class="project__card">
             <a href="https://github.com/Ethan-Hamilton/Library-System-Database" target="_blank" class="project__link">
-              <img src="Books.jpg" alt="project" class="project__image" loading="lazy" />
+              <img src="assets/images/Books.jpg" alt="project" class="project__image" loading="lazy" />
               <h3 class="project__title">Library System</h3>
             </a>
           </div>
           <div class="project__card">
             <a href="https://github.com/koekmonster/Full-Stack-Web-App" target="_blank" class="project__link">
-              <img src="FSD.jpg" alt="project" class="project__image" loading="lazy" />
+              <img src="assets/images/FSD.jpg" alt="project" class="project__image" loading="lazy" />
               <h3 class="project__title">Full-Stack Web App</h3>
             </a>
           </div>
           
           <div class="project__card">
             <a href="https://github.com/Ethan-Hamilton/TextMessagingApp" target="_blank" class="project__link">
-              <img src="MessageApp.jpg" alt="project" class="project__image" loading="lazy" />
+              <img src="assets/images/MessageApp.jpg" alt="project" class="project__image" loading="lazy" />
               <h3 class="project__title">Texting App</h3>
             </a>
           </div>
           <div class="project__card">
             <a href="https://github.com/Ethan-Hamilton/EthansPortfolio.io" target="_blank" class="project__link">
-              <img src="PortfolioCV.jpg" alt="project" class="project__image" loading="lazy" />
+              <img src="assets/images/PortfolioCV.jpg" alt="project" class="project__image" loading="lazy" />
               <h3 class="project__title">Portfolio Website</h3>
             </a>
+          </div>
+        </div>
+        
+        <!-- Experience Timeline within Projects Section -->
+        <div class="timeline__section">
+          <h2 class="section__title">EXPERIENCE TIMELINE</h2>
+          <p class="section__subtitle">My journey in software development</p>
+          
+          <div class="timeline__container">
+            <div class="timeline__line"></div>
+            
+            <!-- Timeline Item 1 -->
+            <div class="timeline__item">
+              <div class="timeline__marker">
+                <div class="timeline__icon">
+                  <i class="fas fa-code"></i>
+                </div>
+              </div>
+              <div class="timeline__content">
+                <div class="timeline__date">2024 - Present</div>
+                <h3 class="timeline__title">Full-Stack Developer</h3>
+                <h4 class="timeline__company">Freelance & Personal Projects</h4>
+                <p class="timeline__description">
+                  Developing full-stack applications using C# (.NET MVC), React, and modern JavaScript frameworks. 
+                  Implemented comprehensive testing with xUnit and AAA patterns across large-scale .NET projects.
+                </p>
+                <div class="timeline__tags">
+                  <span class="tag">C#</span>
+                  <span class="tag">.NET MVC</span>
+                  <span class="tag">React</span>
+                  <span class="tag">xUnit</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Timeline Item 2 -->
+            <div class="timeline__item">
+              <div class="timeline__marker">
+                <div class="timeline__icon">
+                  <i class="fas fa-mobile-alt"></i>
+                </div>
+              </div>
+              <div class="timeline__content">
+                <div class="timeline__date">2024</div>
+                <h3 class="timeline__title">Mobile App Development</h3>
+                <h4 class="timeline__company">React Native Migration</h4>
+                <p class="timeline__description">
+                  Successfully migrated a Flutter project to React and React Native, updating both web and mobile platforms. 
+                  Gained expertise in cross-platform development and mobile UI/UX design.
+                </p>
+                <div class="timeline__tags">
+                  <span class="tag">React Native</span>
+                  <span class="tag">Flutter</span>
+                  <span class="tag">Mobile Development</span>
+                  <span class="tag">Cross-Platform</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Timeline Item 3 -->
+            <div class="timeline__item">
+              <div class="timeline__marker">
+                <div class="timeline__icon">
+                  <i class="fas fa-chart-bar"></i>
+                </div>
+              </div>
+              <div class="timeline__content">
+                <div class="timeline__date">2024</div>
+                <h3 class="timeline__title">Data Analytics & Automation</h3>
+                <h4 class="timeline__company">Power BI & n8n Integration</h4>
+                <p class="timeline__description">
+                  Created comprehensive dashboards using Power BI, wrote DAX queries, and configured scheduled refreshes 
+                  via gateway connections. Designed automation workflows with n8n for streamlined business processes.
+                </p>
+                <div class="timeline__tags">
+                  <span class="tag">Power BI</span>
+                  <span class="tag">DAX</span>
+                  <span class="tag">n8n</span>
+                  <span class="tag">Data Analytics</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Timeline Item 4 -->
+            <div class="timeline__item">
+              <div class="timeline__marker">
+                <div class="timeline__icon">
+                  <i class="fas fa-globe"></i>
+                </div>
+              </div>
+              <div class="timeline__content">
+                <div class="timeline__date">2024</div>
+                <h3 class="timeline__title">MERN Stack Development</h3>
+                <h4 class="timeline__company">Swingshack Platform</h4>
+                <p class="timeline__description">
+                  Architected and developed the complete Swingshack website using React (TypeScript) and Tailwind CSS. 
+                  Implemented responsive design, state management, and modern web development practices.
+                </p>
+                <div class="timeline__tags">
+                  <span class="tag">MERN Stack</span>
+                  <span class="tag">TypeScript</span>
+                  <span class="tag">Tailwind CSS</span>
+                  <span class="tag">React</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Timeline Item 5 -->
+            <div class="timeline__item">
+              <div class="timeline__marker">
+                <div class="timeline__icon">
+                  <i class="fas fa-graduation-cap"></i>
+                </div>
+              </div>
+              <div class="timeline__content">
+                <div class="timeline__date">2023 - 2024</div>
+                <h3 class="timeline__title">Software Development Education</h3>
+                <h4 class="timeline__company">Academic Foundation</h4>
+                <p class="timeline__description">
+                  Built strong foundations in software development principles, algorithms, data structures, and 
+                  software engineering practices. Developed problem-solving skills and technical expertise.
+                </p>
+                <div class="timeline__tags">
+                  <span class="tag">Algorithms</span>
+                  <span class="tag">Data Structures</span>
+                  <span class="tag">Software Engineering</span>
+                  <span class="tag">Problem Solving</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
     
-
     <section id="contact" class="contact">
+      <section class="wrapper">
+        <div class="stars"></div>
+        <div class="stars2"></div>
+        <div class="stars3"></div>
+      </section>
       <div class="section__container footer__container">
         <div class="footer__content">
           <h2 class="section__title">CONTACT ME</h2>
@@ -230,18 +397,65 @@
             <a href="https://www.linkedin.com/in/ethan-hamilton-4724a52b4" class="icon" target="_blank" rel="noopener noreferrer" title="LinkedIn">
               <i class="ri-linkedin-fill"></i>
             </a>
-            <a href="https://www.instagram.com/_ethan_hamilton" class="icon" target="_blank" rel="noopener noreferrer" title="Instagram">
-              <i class="ri-instagram-fill"></i>
+            <a href="assets/documents/Ethan Hamilton-AcademicTranscript.pdf" class="icon" target="_blank" rel="noopener noreferrer" title="Academic Transcript">
+              <i class="fas fa-graduation-cap"></i>
             </a>
           </div>
         </div>
       </div>
     </section>
     
-    
     <footer class="footer">
       <p>© 2024 Ethan Hamilton. All rights reserved.</p>
     </footer>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+        
+        <!-- Embedded Loader -->
+        <div id="loader-container" class="loader-overlay">
+            <!-- From Uiverse.io by dexter-st --> 
+            <div class="loader-wrapper">
+              <div class="loader"></div>
+            </div>
+        </div>
+
+        <!-- Loader Script -->
+        <script>
+            // Show loader on page load
+            window.addEventListener('load', function() {
+                const loaderContainer = document.getElementById('loader-container');
+                
+                // Set total duration to 3 seconds (3000ms)
+                setTimeout(() => {
+                    // Hide loader after completion
+                    loaderContainer.style.opacity = '0';
+                    setTimeout(() => {
+                        loaderContainer.style.display = 'none';
+                    }, 500);
+                }, 3000);
+            });
+
+            // Burger menu functionality
+            document.addEventListener('DOMContentLoaded', function() {
+                const burgerCheckbox = document.getElementById('burger');
+                const navbarCollapse = document.getElementById('navbarNav');
+                
+                burgerCheckbox.addEventListener('change', function() {
+                    if (this.checked) {
+                        navbarCollapse.classList.add('show');
+                    } else {
+                        navbarCollapse.classList.remove('show');
+                    }
+                });
+
+                // Close menu when clicking on nav links
+                const navLinks = document.querySelectorAll('.nav-link');
+                navLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        burgerCheckbox.checked = false;
+                        navbarCollapse.classList.remove('show');
+                    });
+                });
+            });
+        </script>
   </body>
 </html>
